@@ -1,0 +1,6 @@
+Planning for notes-for-you app
+* For when you are overwhelmed and anxious, 
+1) app will send you notes from yourself recorded when youare feeling grateful 
+2) app will suggest you things you can do to feel better
+    a) simple tasks to ease your mental state: meditate, grab a treat, go clean the room
+    b) reflective activity to journal your thoughts
