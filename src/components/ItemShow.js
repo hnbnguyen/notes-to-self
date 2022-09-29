@@ -6,24 +6,32 @@ function Random(maxNumber){
 }
 
 const ItemShow = ({items, handleDelete}) => {
-    const [itemShown, setItemShown] = useState(items)
-
-    // const rand = Random(7)
-    // const one = items.filter(item => item.id === rand);
-    // setItemShown(one);
-    // console.log(one)
+    const initalItemState = {
+        content: '',
+        type: '',
+        id: 0
+    }
+    const [itemShown, setItemShown] = useState(initalItemState)
+    
+    const handleShow = () => {
+        const rand = Random(7)
+        console.log(rand)
+        const one = items.filter(item => item.id === rand);
+        console.log(one[0])
+        console.log(one[0].content)
+    };
 
     return ( 
         <div>
-            {/* <h1>{itemShown.content}</h1> */}
-            <p>heheheh</p>
-            {items.map(item => (
+            <p>what you've saved for a rainy day 🌞</p>
+            <button onClick={() => handleShow()}>show me a note</button>
+            {/* {items.map(item => (
                 <div key={item.id}>
                     <p>{item.type}</p>
                     <h1>{item.content}</h1>
                     <button onClick={() => handleDelete(item.id)}>delete item</button>
                 </div>
-            ))}
+            ))} */}
         </div>
      );
 }

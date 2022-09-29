@@ -15,7 +15,7 @@ const Home = () => {
             <h1 className={classes.heading}>
                 Note-to-self 🦭
             </h1>
-            <p>aren't you glad your past self came prepared:)</p>
+            <p>aren't you glad you came prepared:)</p>
             <div>
                 <a href='./create'>
                     <p>Create note</p>
