@@ -1,8 +1,6 @@
 import Home from "./components/Home";
-import Grateful from "./components/Grateful";
-import JustOkay from "./components/JustOkay";
-import CouldBeBetter from "./components/CouldBeBetter";
-import NotMyBest from "./components/NotMyBest";
+import Create from "./components/Create";
+import Read from "./components/Read";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -11,10 +9,8 @@ function App() {
       <div className="App">
         <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/grateful" element={<Grateful/>} />
-            <Route path="/justContent" element={<JustOkay />} />
-            <Route path="/couldBeBetter" element={<CouldBeBetter/>} />
-            <Route path="/notMyBest" element={<NotMyBest/>} />
+            <Route path="/create" element={<Create />} />
+            <Route path="/read" element={<Read />} />
         </Routes>
       </div>
     </Router>
