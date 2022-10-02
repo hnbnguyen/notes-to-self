@@ -11,7 +11,7 @@ const useStyles = createUseStyles({
     link: {
         textDecoration: "none",
         color: "black",
-    }
+    },
 })
 
 const NavBar = () => {
@@ -20,6 +20,9 @@ const NavBar = () => {
         <div className={classes.frame}>
             <a href='./create' className={classes.link}>
                 <p>Create note</p>
+            </a>
+            <a href="./" className={classes.link}>
+                <p>Note-to-self</p>
             </a>
             <a href='./read' className={classes.link}>
                 <p>Read note</p>
