@@ -6,7 +6,7 @@ const Create = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        const item = {content, type};
+        const items = {content, type};
     }
 
     return ( 

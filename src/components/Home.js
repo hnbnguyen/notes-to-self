@@ -9,13 +9,14 @@ const useStyles  = createUseStyles({
 })
 
 const Home = () => {
+
     const classes = useStyles()
     return ( 
         <div className="home">
             <h1 className={classes.heading}>
                 Note-to-self 🦭
             </h1>
-            <p>aren't you glad you came prepared:)</p>
+            <p>kind words from you to you:)</p>
             <div>
                 <a href='./create'>
                     <p>Create note</p>
