@@ -3,3 +3,29 @@ body {
   font-family: 'Jetbrains Mono';
 }
 
+/* DOING THE HOVER TEXT TRANSITION */
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1.header {
+  font-size: 4em;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 span span:hover {
+  color: #CCCCCC;
+  transition: color 0s;
+}
+
+h1 span span:nth-of-type(even):hover {
+  color: rgb(24, 117, 173);
+}
+
+h1 span span {
+  transition: 0.4s;
+}

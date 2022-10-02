@@ -1,10 +1,12 @@
 import React from 'react';
+import NavBar from './NavBar';
 import { createUseStyles } from 'react-jss';
+import SplitText from './SplitText';
 
 const useStyles  = createUseStyles({
-    heading: {
-        fontSize: 50,
-    },
+    subText: {
+        marginLeft: 20
+    }
 
 })
 
@@ -13,18 +15,12 @@ const Home = () => {
     const classes = useStyles()
     return ( 
         <div className="home">
-            <h1 className={classes.heading}>
-                Note-to-self 🦭
+            <NavBar />
+            <h1 className='header'>
+                <SplitText copy = 'Note to self 🦭: send your future self a kind note
+                and come back when you need to hear it most'/> 
             </h1>
-            <p>kind words from you to you:)</p>
-            <div>
-                <a href='./create'>
-                    <p>Create note</p>
-                </a>
-                <a href='./read'>
-                    <p>Read note</p>
-                </a>
-            </div>
+            <p className={classes.subText}>made with 🤍</p>
         </div>
      );
 }

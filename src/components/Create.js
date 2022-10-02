@@ -6,7 +6,8 @@ const Create = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        const items = {content, type};
+        // const items = {content, type};
+        console.log('note submited')
     }
 
     return ( 
