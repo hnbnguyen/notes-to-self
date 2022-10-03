@@ -1,6 +1,15 @@
 import { useState } from "react";
+import { createUseStyles } from "react-jss";
+
+const useStyles = createUseStyles({
+    title: {
+        fontSize: 50,
+        marginLeft: 20
+    }
+})
 
 const Create = () => {
+    const classes = useStyles()
     const [content, setContent] = useState('');
     const [type, setType] = useState('');
     
@@ -12,7 +21,7 @@ const Create = () => {
 
     return ( 
         <div>
-            <h1>add a new item</h1>
+            <h1 className={classes.title}>add a new item</h1>
             <form onSubmit={handleSubmit}>
                 <label>add a new item</label>
                 <textarea
