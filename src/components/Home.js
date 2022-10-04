@@ -20,7 +20,7 @@ const Home = () => {
                 <SplitText copy = 'Note to self 🦭: send your future self a kind note
                 and come back when you need to hear it most'/> 
             </h1>
-            <p className={classes.subText}>made with 🤍</p>
+            <p className={classes.subText}>made with 🤍 and lots of ☕</p>
         </div>
      );
 }

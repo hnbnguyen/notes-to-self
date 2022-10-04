@@ -30,3 +30,24 @@ h1 span span:nth-of-type(even):hover {
 h1 span span {
   transition: 0.4s;
 }
+/* CREATE NOTE DESIGN */
+.create {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.create button {
+  background-color: rgb(24, 117, 173);
+  color: white;
+  border: 0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
