@@ -40,7 +40,7 @@ const Create = () => {
                         onChange={(e) => setType(e.target.value)}
                     >
                         <option value="note">note to self</option>
-                        <option value="activity">thing i can do</option>
+                        <option value="activity">action items</option>
                     </select>
                     <button>add item</button>
                 </form>

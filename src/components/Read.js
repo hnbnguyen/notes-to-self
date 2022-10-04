@@ -1,7 +1,18 @@
 import { useState } from "react";
+import NavBar from "./NavBar";
+import { createUseStyles } from "react-jss";
+
+const useStyles = createUseStyles({
+    title: {
+        fontSize: 50,
+        marginLeft: 20
+    }
+})
 
 const Read = () => {
     const [items, setItems] = useState('')
+    const classes = useStyles()
+
     const words = [
         'you are the best person your mom knows',
         'I Love that you are kind to people',
@@ -19,8 +30,12 @@ const Read = () => {
 
     return ( 
         <div>
-            <button onClick={handleShow}>show me a note</button>
-            <div>{items}</div>
+            <NavBar />
+            <div className="read">
+                <h1 className={classes.title}>👀 read my notes 🐻</h1>
+                <button onClick={handleShow}>show me a note</button>
+                <div>{items}</div>
+            </div>
         </div>
      );
 }

@@ -51,3 +51,18 @@ h1 span span {
   cursor: pointer;
   margin-top: 10px;
 }
+
+/* READ NOTE DESIGN */
+.read {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.read button {
+  background-color:rgb(24, 117, 173);
+  color: white;
+  border: 0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
