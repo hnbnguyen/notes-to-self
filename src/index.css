@@ -35,12 +35,12 @@ h1 span span {
   max-width: 600px;
   margin: 0 auto;
 }
-.create input, .create textarea, .create select {
+.create textarea, .create select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
-  box-sizing: border-box;
+  box-sizing: "border-box";
 }
 .create button {
   background-color: rgb(24, 117, 173);
@@ -65,4 +65,13 @@ h1 span span {
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+/* FLASH CARD */
+.flashCard{
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-color: black;
 }

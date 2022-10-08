@@ -1,17 +1,9 @@
 import { useState } from "react";
 import NavBar from "./NavBar";
-import { createUseStyles } from "react-jss";
 
-const useStyles = createUseStyles({
-    title: {
-        fontSize: 50,
-        marginLeft: 20
-    }
-})
 
 const Read = () => {
     const [items, setItems] = useState('')
-    const classes = useStyles()
 
     const words = [
         'you are the best person your mom knows',
@@ -32,9 +24,9 @@ const Read = () => {
         <div>
             <NavBar />
             <div className="read">
-                <h1 className={classes.title}>👀 read my notes 🐻</h1>
+                <h1>read my notes</h1>
                 <button onClick={handleShow}>show me a note</button>
-                <div>{items}</div>
+                <div className="flashCard">{items}</div>
             </div>
         </div>
      );

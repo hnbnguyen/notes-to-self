@@ -1,16 +1,8 @@
 import { useState } from "react";
-import { createUseStyles } from "react-jss";
 import NavBar from "./NavBar";
 
-const useStyles = createUseStyles({
-    title: {
-        fontSize: 50,
-        marginLeft: 20
-    }
-})
 
 const Create = () => {
-    const classes = useStyles()
     const [content, setContent] = useState('');
     const [type, setType] = useState('');
     
@@ -24,7 +16,7 @@ const Create = () => {
         <div>
             <NavBar />
             <div className="create">
-                <h1 className={classes.title}>✏️ create note 🐻‍❄️</h1>
+                <h1>create note</h1>
                 <form onSubmit={handleSubmit}>
                     <label>add a new item</label>
                     <textarea
@@ -33,15 +25,25 @@ const Create = () => {
                         value = {content}
                         onChange={(e) => setContent(e.target.value)}
                     />
-
                     <label>item type</label>
-                    <select
+                    <form
                         value = {type}
                         onChange={(e) => setType(e.target.value)}
                     >
-                        <option value="note">note to self</option>
-                        <option value="activity">action items</option>
-                    </select>
+                        <label>
+                            <input
+                            type="radio"
+                            value="note"/>
+                            <span>note</span>
+                        </label>
+                        <br />
+                        <label>
+                            <input
+                            type="radio"
+                            value="activity"/>
+                            <span>activity</span>
+                        </label>
+                    </form>
                     <button>add item</button>
                 </form>
             </div>
