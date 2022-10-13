@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 })
 
 //GET a single items
-router.get('/:id', (res, req) => {
+router.get('/:id', (req, res) => {
     res.json({mssg: 'GET a single item'})
 })
 
