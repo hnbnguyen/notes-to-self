@@ -2,7 +2,9 @@ const express = require('express')
 const { 
     createItem, 
     getItems,
-    getItem
+    getItem,
+    deleteItem,
+    updateItem
 } = require('../controllers/itemController')
 
 const router = express.Router()
@@ -17,14 +19,10 @@ router.get('/:id', getItem)
 router.post('/', createItem)
 
 //DELETE an item
-router.delete('/:id', (req, res) => {
-    res.json({mssg: 'DELETE an item'})
-})
+router.delete('/:id', deleteItem)
 
 //UPDATE a new item
-router.patch('/:id', (req, res) => {
-    res.json({mssg: 'UPDATE an item'})
-})
+router.patch('/:id', updateItem)
 
 // exporting the router with all the routes attached to it
 module.exports = router
