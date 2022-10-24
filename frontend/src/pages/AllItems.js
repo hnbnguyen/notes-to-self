@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
+// components
+import Card from '../components/Card';
 
 const AllItems = () => {
     const [items, setItems] = useState(null)
 
     useEffect(() => {
         const fetchItems = async () => {
-            const response = await fetch('http://localhost:4000/api/items')
+            const response = await fetch('/api/items')
             const json = await response.json()
 
             if (response.ok) {
@@ -21,7 +23,7 @@ const AllItems = () => {
             <h2>all items </h2>
             <div className="items">
                 {items && items.map((item) => (
-                    <p key={item._id}>{item.content}</p>
+                    <Card key={item._id} item={item}/>
                 ))}
             </div>
         </div>
