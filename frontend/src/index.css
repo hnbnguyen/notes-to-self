@@ -78,8 +78,51 @@ h1 span span {
 
 /* ALL ITEMS */
 .card {
-  background-color: red;
+  border-color: black;
+  border-style: groove;
   margin: 10px;
   padding: 10px 40px;
   border-radius: 30px;
+}
+
+.card span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333
+}
+
+/* CREATE ITEM */
+label {
+  display: block;
+}
+
+textarea {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid;
+  border-radius: 4px;
+  margin: 20px 0;
 }
