@@ -47,8 +47,10 @@ const ItemForm = () => {
                 <label>type:</label>
                 <select 
                     value={type} 
+                    required
                     onChange={(e) => setType(e.target.value)}
-                >
+                >   
+                    <option value=""></option>
                     <option value="note">note</option>
                     <option value="action item">action item</option>
                 </select>
