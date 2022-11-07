@@ -1,8 +1,9 @@
 import { useState } from "react";
 import NavBar from "../components/NavBar";
-
+import { useItemsContext } from '../hooks/useItemsContext'
 
 const Read = () => {
+    const { allItems, dispatch } = useItemsContext()
     const [items, setItems] = useState('')
 
     const words = [
@@ -19,6 +20,7 @@ const Read = () => {
         setItems(words[Math.floor(Math.random() * len)])
         console.log(items)
     }
+    // console.log(state)
 
     return ( 
         <div className="read">
