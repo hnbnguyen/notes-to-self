@@ -1,7 +1,7 @@
 import  { createContext, useReducer } from 'react';
 
 //
-export const itemsContext = createContext() 
+export const ItemsContext = createContext() 
 
 export const itemsReducer = (state, action) => {
     switch (action.type) {
@@ -18,15 +18,15 @@ export const itemsReducer = (state, action) => {
     }
 } 
 
-export const itemsContextProvider = ({children}) => {
+export const ItemsContextProvider = ({children}) => {
 
     const [state, dispatch] = useReducer(itemsReducer, {
         items: null
     })
     
     return (
-        <itemsContext.Provider value={{...state, dispatch}}>
+        <ItemsContext.Provider value={{...state, dispatch}}>
             { children } 
-        </itemsContext.Provider>
+        </ItemsContext.Provider>
     )
 }
