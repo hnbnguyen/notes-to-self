@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
+import { useItemsContext } from '../hooks/useItemsContext'
 // components
 import Card from '../components/Card';
 
 const AllItems = () => {
-    const [items, setItems] = useState(null)
+    const {items, dispatch} = useItemsContext()
 
     useEffect(() => {
         const fetchItems = async () => {
@@ -11,7 +12,7 @@ const AllItems = () => {
             const json = await response.json()
 
             if (response.ok) {
-                setItems(json)
+                dispatch({type: 'SET_ITEMS', payload: json})
             }
         }
 
